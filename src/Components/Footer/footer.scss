@@ -1,0 +1,15 @@
+.footer {
+  height: 40px;
+  scroll-snap-align: center;
+
+  .wrapper {
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    .circle {
+      cursor: pointer;
+    }
+  }
+}

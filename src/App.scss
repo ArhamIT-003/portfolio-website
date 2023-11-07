@@ -1,0 +1,51 @@
+// $background-color: #ece3ce; // Define a variable for the background color.
+// $text-color: #3a4d39; // Define a variable for the text color.
+// $accent-color: #4f6f52; // Define a variable for the accent color.
+// $section-color: #739072; // Define a variable for the section color.
+
+$background-color: #3a4d39;
+$text-color: #ece3ce;
+$section-color: #4f6f52;
+$accent-color: #739072;
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
+
+@import "animate.css";
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+div {
+  scroll-snap-align: center;
+}
+
+section {
+  height: 100vh;
+  max-width: 1080px;
+  margin: auto;
+  scroll-snap-align: center;
+}
+
+button {
+  background-color: $accent-color;
+  color: $text-color;
+  border: none;
+  cursor: pointer;
+}
